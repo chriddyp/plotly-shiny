@@ -4,5 +4,7 @@
 ### Usage
 ```R
 setwd('plotly-shiny')
+
+library(shiny)
 runApp()
 ```
