@@ -10,7 +10,7 @@ A simplified version of a project by [@Huade](https://github.com/Huade/UN_IdealP
 A *fancier* version of a project by [@Huade](https://github.com/Huade/UN_IdealPoints)
 
 **Diamonds**
-
+ggplot2 example using the diamonds data (built into ggplot2) adapted from: https://gist.github.com/jcheng5/3239667 to work with Plotly.
 
 **311**
 ![GIF of a Plotly graph in a Shiny App that filters 311 complaint calls](http://i.imgur.com/mrsarta.gif)
