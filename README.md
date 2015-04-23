@@ -22,3 +22,5 @@ library(shiny)
 runApp()
 ```
 or open runApp.R from the folder and select Run App in the top right corner.
+
+<iframe src="https://chelsea.shinyapps.io/SimpleTest/" style="border: none; width: 800px; height: 700px"></iframe>
