@@ -17,12 +17,12 @@ shinyServer(function(input, output) {
 														x = x, 
 														autobinx = FALSE, 
 														xbins = list(
-														start = minx, 
-														end = maxx, 
-														size =  ((maxx-minx)/bins)
-														),  
-									type = "histogram"
-									)
+															start = minx, 
+															end = maxx, 
+															size =  ((maxx-minx)/bins)
+															),  
+														type = "histogram"
+														)
 		
 					# define data
 					data <- list(trace1)

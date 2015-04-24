@@ -16,8 +16,7 @@ shinyServer(function(input, output, session) {
         labs(y = "Ideology") +
         labs(title = "Ideal Points for Countries") +
         scale_colour_hue("clarity",l=70, c=150) + 
-        theme_few()
-      
+        theme_few() 
 
       # Year range
       min_Year <- min(df_trend$Year)

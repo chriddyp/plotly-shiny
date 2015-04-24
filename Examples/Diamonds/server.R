@@ -11,9 +11,6 @@ shinyServer(function(input, output, session) {
 													 y = input$y)) + 
 				 geom_point() 
 		
-		p <- p +	 theme(legend.position= c(1,1),
-							 			 legend.background= element_rect(fill="transparent"))
-		
 		if (input$color != 'None')
 				p <- p + aes_string(color=input$color)
 		
@@ -22,6 +19,11 @@ shinyServer(function(input, output, session) {
 				p <- p + facet_grid(facets)
 			
 		gg <- gg2fig(p)
+		
+		gg$layout <- list(legend = list(
+			x = 1, 
+			y = 1, 
+			bgcolor = "transparent"))
 		
 		# Send this message up to the browser client, which will get fed through to
 		# Plotly's javascript graphing library embedded inside the graph
