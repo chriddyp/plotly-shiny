@@ -12,17 +12,10 @@ graphOutput <- function(inputId, width="100%", height="550px") {
     )
 }
 
-#Function to change ggplot figure into plotly syntax
-#gg is the users ggplot
-#called in the server script to return data and layout info separately 
-gg2fig <- function(gg) {
-	fig <- gg2list(gg)
-	data <- list()
-	for(i in 1:(length(fig)-1)){data[[i]]<-fig[[i]]}
-	layout <- fig$kwargs$layout
-	result <- list(data=data,layout=layout)
-	return(result)
-} 
+# Function to change ggplot figure into plotly syntax
+# Takes gg (the user's ggplot) as argument.
+# Provided by gg2list directly since package version 0.5.30 
+gg2fig <- gg2list
 
 renderGraph <- function(expr, env=parent.frame(), quoted=FALSE) {
     ## This gets called when inputs change --
