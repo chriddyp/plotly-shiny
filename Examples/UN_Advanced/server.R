@@ -34,17 +34,14 @@ shinyServer(function(input, output, session) {
       ggideal_point <- ggideal_point+
         theme(legend.direction = "horizontal", legend.position = "bottom")
 
-
-
       # Year range
       min_Year <- min(df_trend$Year)
       max_Year <- max(df_trend$Year)
 
-      # This converts the ggplot2 graph into Plotly's format.
-      # This is a list of lists which declaratively describe every attribute
-      # of the plotly graph
-      gg<- gg2fig(ggideal_point)
-      
+      # Use gg2list() to convert from ggplot->plotly
+      gg<- gg2list(ggideal_point)
+
+      # Use Plotly syntax to further edit the plot:
       gg$layout$annotations <- NULL # Remove the existing annotations (the legend label)
       gg$layout$annotations <- list()
 

@@ -1,4 +1,4 @@
-#This script is necessary in the app folder 
+#This script is necessary in the app folder
 #but the user should not have to edit it
 
 #Output Graph Function
@@ -12,25 +12,13 @@ graphOutput <- function(inputId, width="100%", height="550px") {
     )
 }
 
-#Function to change ggplot figure into plotly syntax
-#gg is the users ggplot
-#called in the server script to return data and layout info separately 
-gg2fig <- function(gg) {
-	fig <- gg2list(gg)
-	data <- list()
-	for(i in 1:(length(fig)-1)){data[[i]]<-fig[[i]]}
-	layout <- fig$kwargs$layout
-	result <- list(data=data,layout=layout)
-	return(result)
-} 
-
 renderGraph <- function(expr, env=parent.frame(), quoted=FALSE) {
     ## This gets called when inputs change --
     ## Place data wrangling code in here
     ## and pass the result to the client
     ## to be graphed.
 
-	
+
 	installExprFunction(expr, "func", env, quoted)
 
     function(){
@@ -42,6 +30,6 @@ renderGraph <- function(expr, env=parent.frame(), quoted=FALSE) {
         ## and https://github.com/plotly/Embed-API for more about the postMessage
         ## graph messages
         return(data)
- 
+
     }
 }
