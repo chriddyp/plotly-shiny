@@ -1,4 +1,4 @@
-#This script is necessary in the app folder 
+#This script is necessary in the app folder
 #but the user should not have to edit it
 
 #Output Graph Function
@@ -14,7 +14,7 @@ graphOutput <- function(inputId, width="100%", height="550px") {
 
 # Function to change ggplot figure into plotly syntax
 # Takes gg (the user's ggplot) as argument.
-# Provided by gg2list directly since package version 0.5.30 
+# Provided by gg2list directly since package version 0.5.30
 gg2fig <- gg2list
 
 renderGraph <- function(expr, env=parent.frame(), quoted=FALSE) {
@@ -23,7 +23,7 @@ renderGraph <- function(expr, env=parent.frame(), quoted=FALSE) {
     ## and pass the result to the client
     ## to be graphed.
 
-	
+
 	installExprFunction(expr, "func", env, quoted)
 
     function(){
@@ -35,6 +35,6 @@ renderGraph <- function(expr, env=parent.frame(), quoted=FALSE) {
         ## and https://github.com/plotly/Embed-API for more about the postMessage
         ## graph messages
         return(data)
- 
+
     }
 }

@@ -15,15 +15,15 @@ shinyServer(function(input, output, session) {
         labs(x = "Year") +
         labs(y = "Ideology") +
         labs(title = "Ideal Points for Countries") +
-        scale_colour_hue("clarity",l=70, c=150) + 
-        theme_few() 
+        scale_colour_hue("clarity",l=70, c=150) +
+        theme_few()
 
       # Year range
       min_Year <- min(df_trend$Year)
       max_Year <- max(df_trend$Year)
 
       #This grabs data and layout information from the ggplot
-      gg<- gg2fig(ggideal_point)
+      gg <- gg2list(ggideal_point)
 
       # Send this message up to the browser client, which will get fed through to
       # Plotly's javascript graphing library embedded inside the graph
