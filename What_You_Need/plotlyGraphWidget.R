@@ -12,11 +12,6 @@ graphOutput <- function(inputId, width="100%", height="550px") {
     )
 }
 
-# Function to change ggplot figure into plotly syntax
-# Takes gg (the user's ggplot) as argument.
-# Provided by gg2list directly since package version 0.5.30
-gg2fig <- gg2list
-
 renderGraph <- function(expr, env=parent.frame(), quoted=FALSE) {
     ## This gets called when inputs change --
     ## Place data wrangling code in here

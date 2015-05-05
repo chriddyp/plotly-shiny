@@ -22,7 +22,7 @@ shinyServer(function(input, output, session) {
       min_Year <- min(df_trend$Year)
       max_Year <- max(df_trend$Year)
 
-      #This grabs data and layout information from the ggplot
+      # use gg2list() to convert from ggplot->plotly
       gg <- gg2list(ggideal_point)
 
       # Send this message up to the browser client, which will get fed through to
