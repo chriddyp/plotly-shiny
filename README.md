@@ -1,9 +1,11 @@
 ## embedding plotly graphs in shiny apps
 
+[Play around here](https://plotly.shinyapps.io/plotly_in_shiny/)
+
 These examples update Plotly graphs *client-side* through Plotly's [Embed-API](https://github.com/plotly/Embed-API)
 
 **Movies - Plotly**
-Simple histogram example adapted from Hello Shiny (http://glimmer.rstudio.com/shiny/01_hello/) using "Movies" data and only Plotly syntax
+Simple histogram example adapted from [Hello Shiny](http://glimmer.rstudio.com/shiny/01_hello/) using "Movies" data
 
 **UN_Simple - Plotly with ggplot2**
 A simplified version of a line graph project by [@Huade](https://github.com/Huade/UN_IdealPoints). 
