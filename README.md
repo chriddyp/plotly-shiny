@@ -8,5 +8,5 @@ This repository was created 2 years and a lot has changed with Plotly's R librar
 - [Plotly and Shiny Tutorial](https://plot.ly/r/shiny-tutorial/)
 - [Plotly's R Library](https://plot.ly/r/)
 - [Plotly and R User Guide Book](https://cpsievert.github.io/plotly_book/)
-- [@plotlygraphs](https://twitter.com/plotlygraphs) for updates
+- [@plotlygraphs](https://twitter.com/plotlygraphs)
 - [Shiny and Plotly Consulting](https://plot.ly/products/consulting-and-oem/)
