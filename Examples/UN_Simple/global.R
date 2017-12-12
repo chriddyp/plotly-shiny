@@ -4,7 +4,7 @@ library(plotly)
 library(shiny)
 library(dplyr)
 
-py <- plotly(username="rAPI", key="yu680v5eii", base_url="https://plot.ly")
+py <- plotly(username="rAPI", key="yu680v5eii")
 
 source("plotlyGraphWidget.R")
 
